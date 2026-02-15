@@ -13,7 +13,7 @@ module tb_blinky_1s;
     // 12 MHz clock (1000/(12*2) == 41.66666...)
     initial begin
         clk_in = 0;
-        forever #41.7 clk_in = !clk_in;
+        forever #41.7 clk_in = ~clk_in;
     end
 
     // Test stimulus: run the simulation for 20 milliseconds

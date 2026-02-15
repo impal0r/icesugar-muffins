@@ -45,7 +45,7 @@ module DivideClockBy_3 (
     reg A = 0, B = 0;
     wire C;
 
-    assign C = !(A || B);
+    assign C = ~(A | B);
 
     always @(posedge CLK_IN) begin
         // Non-blocking (parallel) assignment using <=
@@ -65,7 +65,7 @@ module DivideClockBy_5 (
     reg A = 0, B = 0, C = 0, D = 0;
     wire E;
 
-    assign E = !(A || B || C || D);
+    assign E = ~(A | B | C | D);
 
     always @(posedge CLK_IN) begin
         B <= A;
