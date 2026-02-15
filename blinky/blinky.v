@@ -10,6 +10,6 @@ module Blinky(
         counter = counter + 1;
     end
 
-    assign GREEN_LED = counter[22];
+    assign YELLOW_LED = counter[22];
 
 endmodule

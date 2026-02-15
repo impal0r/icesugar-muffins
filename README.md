@@ -27,3 +27,8 @@ My first ever Verilog program! This one blinks the yellow LED on and off about e
 
 If you saw the number 22 in the code and you're wondering where the extra factor of 2 comes from, the counter is actually 23 bits: they are numbered from 22 to 0.
 
+## 2. Blinky with one second period
+
+For my second ever Verilog program, I decided to change the blink period to one second. This meant I had to divide the clock frequency by 12 million, which is not a power of 2. But its only prime factors are 2, 3 and 5, making the implementation feasible. I used a trick for making whole-number clock dividers using a handful of binary registers and a NOR gate.
+
+This time, I also wrote a test bench so I could simulate the circuit and view the output in GTKwave.
