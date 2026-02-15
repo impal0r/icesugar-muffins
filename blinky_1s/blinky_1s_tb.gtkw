@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sun Feb 15 20:08:37 2026
+[*]
+[dumpfile] "C:\Users\Vlad\repos\icesugar-muffins\blinky_1s\_build\default\blinky_1s_tb.vcd"
+[dumpfile_mtime] "Sun Feb 15 20:07:28 2026"
+[dumpfile_size] 13285438
+[savefile] "C:\Users\Vlad\repos\icesugar-muffins\blinky_1s\blinky_1s_tb.gtkw"
+[timestart] 0
+[size] 1920 959
+[pos] -103 -100
+*-31.492449 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_blinky_1s.
+[sst_width] 310
+[signals_width] 258
+[sst_expanded] 1
+[sst_vpaned_height] 280
+@28
+tb_blinky_1s.DUT.CLK
+tb_blinky_1s.DUT.clk1
+tb_blinky_1s.DUT.clk6
+tb_blinky_1s.DUT.clk_out
+@23
+tb_blinky_1s.DUT.binary_counter[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
