@@ -19,7 +19,7 @@ cd blinky
 apio build
 apio upload
 ```
-This will create a `blinky/_build` directory with build artifacts, then upload the bitstream onto the FPGA, and the FPGA will begin to "run the code" automatically.
+This will create a `blinky/_build` directory with build artifacts, then upload the bitstream onto the FPGA. The FPGA will initialise automatically and the LED should start blinking like it's supposed to.
 
 ## 1. Blinky
 
