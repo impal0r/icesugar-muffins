@@ -9,6 +9,8 @@ Hardware:
 Software tooling:
 - apio: an open-source toolkit for programming FPGA boards
 
+Apio supports Verilog and SystemVerilog as its HDL launguages. I made my first couple of mini-projects using only Verilog, but might later write some SystemVerilog too.
+
 ### Build steps
 
 Example for the "blinky" project:
