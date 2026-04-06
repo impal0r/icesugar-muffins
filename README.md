@@ -3,8 +3,9 @@
 This repository contains some of my first projects as a beginner in FPGA programming.
 
 Hardware:
-- MuseLabs icesugar-nano FPGA dev board
-- This hosts an iCE40LP1K-CM36 FPGA
+- MuseLabs icesugar-nano FPGA dev board (this hosts an iCE40LP1K-CM36 FPGA)
+- USB-C cable
+- Laptop
 
 Software tooling:
 - apio: an open-source toolkit for programming FPGA boards
