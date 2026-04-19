@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sun Apr 19 17:37:10 2026
+[*]
+[dumpfile] "C:\Users\Vlad\repos\icesugar-muffins\morse\_build\default\morse_tb.vcd"
+[dumpfile_mtime] "Sun Apr 19 17:35:39 2026"
+[dumpfile_size] 12492604
+[savefile] "C:\Users\Vlad\repos\icesugar-muffins\morse\morse_tb.gtkw"
+[timestart] 0
+[size] 1920 959
+[pos] -27 -24
+*-29.532221 2010000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_morse.
+[sst_width] 310
+[signals_width] 294
+[sst_expanded] 1
+[sst_vpaned_height] 280
+@28
+tb_morse.DUT.slow_clk
+@22
+tb_morse.DUT.wait_time_counter[3:0]
+tb_morse.DUT.wait_timing[3:0]
+@29
+tb_morse.DUT.YELLOW_LED
+[pattern_trace] 1
+[pattern_trace] 0

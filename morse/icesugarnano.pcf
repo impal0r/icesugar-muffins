@@ -1,0 +1,5 @@
+# LEDs
+set_io      YELLOW_LED      B6
+
+# Clock
+set_io      CLK             D1

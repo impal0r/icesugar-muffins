@@ -35,3 +35,13 @@ If you saw the number 22 in the code and you're wondering where the extra factor
 For my second ever Verilog program, I decided to change the blink period to one second. This meant I had to divide the clock frequency by 12 million, which is not a power of 2. But its only prime factors are 2, 3 and 5, making the implementation feasible. I used a trick for making whole-number clock dividers using a handful of binary registers and a NOR gate.
 
 This time, I also wrote a test bench so I could simulate the circuit and view the output in GTKwave.
+
+## Morse code (hardcoded version)
+
+Next, something slightly more practical: we can make the LED output Morse code. The sequence is hardcoded in the design via an array of timings (the number of clock pulses to wait before next turning the LED on, or off).
+
+To make the implementation easier, there is a Python script which converts Morse code sequences to a Verilog stub: this can be copy-pasted into `morse.v`. Try the command `python translate.py --help` to see possible command-line arguments. I used the the script in the following way:
+
+```python translate.py hello_world_morse.txt -o hello_world_timings.txt -i 8```
+
+The FPGA currently outputs the phrase "HELLO WORLD", which takes exactly 64 toggles of the LED. To make it say a different phrase, you may have to change the parameters which control the size of the timings array, and find a way to deal with unused array entries.
