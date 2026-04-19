@@ -36,7 +36,7 @@ For my second ever Verilog program, I decided to change the blink period to one 
 
 This time, I also wrote a test bench so I could simulate the circuit and view the output in GTKwave.
 
-## Morse code (hardcoded version)
+## 3. Morse code generator
 
 Next, something slightly more practical: we can make the LED output Morse code. The sequence is hardcoded in the design via an array of timings (the number of clock pulses to wait before next turning the LED on, or off).
 
