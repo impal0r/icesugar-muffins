@@ -45,3 +45,5 @@ To make the implementation easier, there is a Python script which converts Morse
 ```python translate.py hello_world_morse.txt -o hello_world_timings.txt -i 8```
 
 The FPGA currently outputs the phrase "HELLO WORLD", which takes exactly 64 toggles of the LED. To make it say a different phrase, you may have to change the parameters which control the size of the timings array, and find a way to deal with unused array entries.
+
+To make simulating the design take a couple seconds instead of 1000s of seconds, I changed the parameter CLOCK_DIV_POW_2 from 20 to 10 before simulating the design; 25 milliseconds is just enough for the whole Morse Code phrase when CLOCK_DIV_POW_2==10. Maybe next time I'll make the test bench set this parameter automatically. 

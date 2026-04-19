@@ -18,7 +18,7 @@ module tb_morse;
 
     // Test stimulus: run the simulation for 20 milliseconds
     initial begin
-        #20000000;  // 20 milliseconds
+        #25000000;  // 25 milliseconds
         $finish;
     end
 
