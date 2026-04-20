@@ -6,13 +6,13 @@ import logging
 from logging import Logger
 import os
 
-# keep a constant cadence of 4-tick beats
+# follow generally accepted 1-3-7 timings
 DOT_ON_TIME = 1
-DOT_OFF_TIME = 3
 DASH_ON_TIME = 3
-DASH_OFF_TIME = 1
-LETTER_PAUSE_TIME = 4
-WORD_PAUSE_TIME = 8
+SYMBOL_GAP = 1
+LETTER_GAP = 3
+WORD_GAP = 7
+# pause before repeating the message in a loop
 END_MESSAGE_PAUSE_TIME = 12
 
 
@@ -25,18 +25,18 @@ def morse_code_to_timings(morse_code: str) -> list[int]:
             # DOT
             if symbol == '.':
                 timings.append(DOT_ON_TIME)
-                timings.append(DOT_OFF_TIME)
+                timings.append(SYMBOL_GAP)
             # DASH
             elif symbol == '-':
                 timings.append(DASH_ON_TIME)
-                timings.append(DASH_OFF_TIME)
+                timings.append(SYMBOL_GAP)
             # LETTER SEPARATOR
             elif symbol == ' ':
-                timings[-1] += LETTER_PAUSE_TIME
+                timings[-1] = LETTER_GAP
             else:
                 raise ValueError(f"'{symbol}' is not a valid symbol in morse code.")
-        timings[-1] += WORD_PAUSE_TIME
-    timings[-1] += END_MESSAGE_PAUSE_TIME - WORD_PAUSE_TIME
+        timings[-1] = WORD_GAP
+    timings[-1] = END_MESSAGE_PAUSE_TIME
     return timings
 
 
